@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-image: url("vault-room.avif");
+    background-size: cover;
+    transition: background 0.5s ease;
+}
+
+body.win-background {
+    background-image: url("robbery-success.webp");
+}
+
+body.lose-background {
+    background-image: url("robbery-failed.webp");
+}
+
+#currentGuess {
+    font-size: 3em;
+    color: red;
+}
+
+#clock {
+    position: absolute;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+    top: 170px;
+    right: 310px;
+}
+
+#countdown {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 110px;
+    right: 180px;
+    z-index: 1;
+}
+
+#notes {
+    position: absolute;
+    width: 540px;
+    height: auto;
+    top: 86px;
+    right: 1020px;
+    z-index: 1;
+}
+
+#log {
+    position: absolute;
+    font-size: 1.5em;
+    list-style: none;
+    padding: 0;
+    width: 300px;
+    text-align: left;
+    right: 1100px;
+    top: 110px;
+    z-index: 2;
+}
+
+#log li {
+    margin: 5px 0;
+    padding: 8px;
+}
+
+#buttons {
+    background-color: cadetblue;
+    padding: 10px;
+    position: absolute;
+    top: 650px;
+    left: 600px;
+}
+
+#buttons button {
+    font-size: 1.5em;
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#buttons button:hover {
+    background-color: #45a049;
+}
+
+#successBtn {
+    position: absolute;
+    top: 220px;
+    right: 320px;
+}

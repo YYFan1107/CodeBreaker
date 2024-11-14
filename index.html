@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Breaker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="clock">Countdown: 7</div>
+    <img src="clock.webp" alt="Countdown clock" id="countdown">
+    <div id="vault">
+        <div id="buttons">
+            <button onclick="enterCode(1)">1</button>
+            <button onclick="enterCode(2)">2</button>
+            <button onclick="enterCode(3)">3</button>
+            <button onclick="clearGuess()">Clear</button>
+        </div>
+        <div id="currentGuess">Current guess: </div>
+    </div>
+    <ul id="log"></ul>
+    <img src="notepad.png" alt="notepad" id="notes">
+    <button id="replay-btn" onclick="replay()" style="display: none;">Play again</button>
+    <button id="successBtn">View Successful Vaults</button>
+    <script src="script.js"></script>
+</body>
+</html>
